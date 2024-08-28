@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Major+Mono+Display&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    font-family: "Major Mono Display", monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.store-locator {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.store-search {
+    flex: 1;
+    padding-right: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: "Major Mono Display", monospace;
+}
+
+label {
+    display: block;
+    font-family: "Major Mono Display", monospace;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    font-family: "Major Mono Display", monospace;
+    margin-bottom: 15px;
+}
+
+#store-list {
+    margin-top: 20px;
+}
+
+.store {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.store:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.direction-btn, .store-page-btn {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.direction-btn:hover, .store-page-btn:hover {
+    background-color: #0056b3;
+}
+
+#map {
+    flex: 1;
+    min-height: 400px;
+}
+
+@media (max-width: 768px) {
+    .store-locator {
+        flex-direction: column;
+    }
+
+    #map {
+        margin-top: 20px;
+    }
+}

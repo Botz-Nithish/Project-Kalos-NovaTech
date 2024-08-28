@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductList</title>
+    <link rel="stylesheet" href="productpage.css">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <meta name="robots" content="noindex,follow" />
+</head>
+
+<body>
+    <script src="imagegenerate.js"></script>
+    <header>
+        <div class="header" id="myHeader">
+        <div class="top-bar">
+            <div class="top-left">
+                <a href="stores.html">
+                    <i class="fas fa-store"></i></a>
+                <i class="fas fa-phone-alt"></i> 1800-833-4488
+            </div>
+            <div class="top-middle">
+                <h1>novavest</h1>
+            </div>
+            <div class="top-right">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-user"></i>
+            </div>
+        </div>
+        <nav role="navigation" class="primary-navigation">
+            <ul>
+                <li><a id="newarrivals" href="#">New Arrivals &dtrif;</a>
+                    <ul class="dropdown">
+                        <li><a id="newarrivalsall" href="#">All </a>
+                            <ul class="dropdown">
+                                <li><a id="newarrivalsallmen" href="#">Men </a></li>
+                                <li><a id="newarrivalsallwoman" href="#">Woman</a></li>
+                            </ul>
+                        </li>
+                        <li><a id="newarrivalsnewin" href="#">New In </a>
+                            <ul class="dropdown">
+                                <li><a id="newarrivalsnewinpr" href="#">Polo Ralph</a></li>
+                                <li><a id="newarrivalsnewine" href="#">Emporio </a></li>
+                                <li><a id="newarrivalsnewinf" href="#">Fred</a></li>
+                                <li><a id="newarrivalsnewink" href="#">Karl </a></li>
+                            </ul>
+                        </li>
+                        <li><a id="newarrivalsbrands" href="#">Brands </a>
+                            <ul class="dropdown">
+                                <li><a id="newarrivalsbrandsmj" href="#">Marc Jacobs</a></li>
+                                <li><a id="newarrivalsbrandscpc" href="#">CP Company</a></li>
+                                <li><a id="newarrivalsbrandsh" href="#">Hackett</a></li>
+                                <li><a id="newarrivalsbrandst" href="#">Tissot</a></li>
+                                <li><a href="#">Karl</a></li>
+                                <li><a href="#">Michael</a></li>
+                                <li><a href="#">GCDS</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a id="men" href="#">Men &dtrif;</a>
+                    <ul class="dropdown">
+                        <li><a id="menclothing" href="#">Clothing </a>
+                            <ul class="dropdown">
+                                <li><a id="menclothingp" href="#">Polos</a></li>
+                                <li><a id="menclothingc" href="#">Casuals</a></li>
+                                <li><a id="menclothingf" href="#">Formals</a></li>
+                                <li><a id="menclothingt" href="#">T-Shirts</a></li>
+                                <li><a id="menclothingj" href="#">Jeans</a></li>
+                                <li><a id="menclothingtr" href="#">Trousers</a></li>
+                                <li><a id="menclothingja" href="#">Jackets</a></li>
+                            </ul>
+                        </li>
+                        <li><a id="menaccesories" href="#">Accessories </a>
+                            <ul class="dropdown">
+                                <li><a id="menaccesoriess" href="#">Shoes</a></li>
+                                <li><a id="menaccesoriesb" href="#">Bags</a></li>
+                                <li><a id="menaccesoriesw" href="#">Wallets</a></li>
+                                <li><a id="menaccesoriesbe" href="#">Belts</a></li>
+                                <li><a id="menaccesoriessu" href="#">Sunglasses</a></li>
+                                <li><a id="menaccesorieswa" href="#">Watches</a></li>
+                                <li><a id="menaccesoriesc" href="#">Cufflinks</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Brands </a>
+                            <ul class="dropdown">
+                                <li><a id="menbrandsmj" href="#">Marc Jacobs</a></li>
+                                <li><a id="menbrandscpc" href="#">CP Company</a></li>
+                                <li><a id="menbrandsh" href="#">Hackett</a></li>
+                                <li><a id="menbrandst" href="#">Tissot</a></li>
+                                <li><a id="menbrandsk" href="#">Karl</a></li>
+                                <li><a id="menbrandsm" href="#">Michael</a></li>
+                                <li><a id="menbrandsgc" href="#">GCDS</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a id="woman" href="#">Woman &dtrif;</a>
+                    <ul class="dropdown">
+                        <li><a id="womanclothing" href="#">Clothing </a>
+                            <ul class="dropdown">
+                                <li><a id="womanclothingt" href="#">Tops</a></li>
+                                <li><a id="womanclothings" href="#">Shirts</a></li>
+                                <li><a id="womanclothingp" href="#">Polos</a></li>
+                                <li><a href="#">Dresses</a></li>
+                                <li><a href="#">Knitwear</a></li>
+                                <li><a href="#">Jeans</a></li>
+                                <li><a href="#">Jackets</a></li>
+                                <li><a href="#">T-Shirts</a></li>
+                                <li><a href="#">Trousers</a></li>
+                                <li><a href="#">Shorts</a></li>
+                                <li><a href="#">Innerwear</a></li>
+                            </ul>
+                        </li>
+                        <li><a id="womanaccesories" href="#">Accessories</a>
+                            <ul class="dropdown">
+                                <li><a id="womanaccesoriesh" href="#">Handbags</a></li>
+                                <li><a id="womanaccesoriesj" href="#">Jewelry</a></li>
+                                <li><a id="womanaccesoriess" href="#">Sunglasses</a></li>
+                                <li><a href="#">Watches</a></li>
+                                <li><a href="#">Belts</a></li>
+                                <li><a href="#">Fragrances</a></li>
+                                <li><a href="#">Shoes</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Brands</a>
+                            <ul class="dropdown">
+                                <li><a id="womanbrandsb" href="#">Baker</a></li>
+                                <li><a id="womanbrandsm" href="#">Marc</a></li>
+                                <li><a id="womanbrandsm" href="#">Polo </a></li>
+                                <li><a href="#">Michael Kors</a></li>
+                                <li><a href="#">Fred Perry</a></li>
+                                <li><a href="#">Couture</a></li>
+                                <li><a href="#">Lacoste</a></li>
+                                <li><a href="#">Moschino</a></li>
+                                <li><a href="#">Kenzo</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a id="kids" href="#">Kids &dtrif;</a>
+                    <ul class="dropdown">
+                        <li><a id="kidsclothing" href="#">Clothing </a>
+                            <ul class="dropdown">
+                                <li><a id="kidsclothingp" href="#">Polo</a></li>
+                                <li><a id="kidsclothingt" href="#">T-Shirts</a></li>
+                                <li><a id="kidsclothings" href="#">Shirts</a></li>
+                                <li><a href="#">Knitwear</a></li>
+                                <li><a href="#">Jackets</a></li>
+                                <li><a href="#">Shorts</a></li>
+                                <li><a href="#">Trousers</a></li>
+                            </ul>
+                        </li>
+                        <li><a id="kidsbrands" href="#">Brands </a>
+                            <ul class="dropdown">
+                                <li><a id="kidsbrandsh" href="#">Hackett</a></li>
+                                <li><a id="kidsbrandsp" href="#">Polo Ralph</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a id="accesories" href="#">Accessories &dtrif;</a>
+                    <ul class="dropdown">
+                        <li><a id="accesoriesstyle" href="#">Style </a>
+                            <ul class="dropdown">
+                                <li><a id="accesoriesstyleb" href="#">Backpacks</a></li>
+                                <li><a id="accesoriesstylec" href="#">Crossbody Bags</a></li>
+                                <li><a id="accesoriesstylep" href="#">Purses</a></li>
+                                <li><a href="#">Satchel</a></li>
+                                <li><a href="#">Shoulder Bags</a></li>
+                                <li><a href="#">Tote Bags</a></li>
+                                <li><a href="#">Travel Bags</a></li>
+                                <li><a href="#">Travel Pouches</a></li>
+                                <li><a href="#">Card Holder</a></li>
+                            </ul>
+                        </li>
+                        <li><a id="accesoriesbrands" href="#">Brands </a>
+                            <ul class="dropdown">
+                                <li><a id="accesoriesbrandsd" href="#">DKNY</a></li>
+                                <li><a id="accesoriesbrandsm" href="#">Moshino</a></li>
+                                <li><a id="accesoriesbrandsp" href="#">PoloRalph</a></li>
+                                <li><a href="#">Globe trotter</a></li>
+                                <li><a href="#">Ted Baker</a></li>
+                                <li><a href="#">Versace Jeans</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a id="footwear" href="#">Footwear &dtrif;</a>
+                    <ul class="dropdown">
+                        <li><a id="footwearstyles" href="#">styles </a>
+                            <ul class="dropdown">
+                                <li><a id="footwearstylescs" href="#">Casual Shoes</a></li>
+                                <li><a id="footwearstylesff" href="#">Flip Flops</a></li>
+                                <li><a id="footwearstylesfs" href="#">Formal Shoes</a></li>
+                                <li><a id="footwearstyleslo" href="#">Loafers</a></li>
+                                <li><a href="#">sneakers</a></li>
+                            </ul>
+                        </li>
+                        <li><a id="footwearbrands" href="#">Brands </a>
+                            <ul class="dropdown">
+                                <li><a id="footwearbrandsad" href="#">Adidas</a></li>
+                                <li><a id="footwearbrandsfr" href="#">Fred Perry</a></li>
+                                <li><a id="footwearbrandste" href="#">Ted Baker</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Gifts &dtrif;</a>
+                    <ul class="dropdown">
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <img src="images/BG2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/BG4.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/BG2.jpg" style="width:100%">
+        </div>
+
+        <!-- The dots/circles -->
+        <div class="dots-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    </div>
+    <div class="text-before">
+        new arrivals
+    </div>
+
+    <ul class="results">
+        <li class="result">
+            <a href="productpage.html"><img src="images/BG14.jpg" width="500" height="500" alt=""></a>
+        </li>
+        <li class="result">
+            <a href="productpage.html"><img src="images/BG11.jpg" width="500" height="500" alt=""></a>
+        </li>
+        <li class="result">
+            <a href="productpage.html"><img src="images/BG8.jpg" width="500" height="500" alt=""></a>
+        </li>
+        <li class="result">
+            <a href="productpage.html"><img src="images/BG6.jpg" width="500" height="500" alt=""></a>
+        </li>
+        <li class="result">
+            <a href="productpage.html"><img src="images/BG10.jpg" width="500" height="500" alt=""></a>
+        </li>
+    </ul>
+    <div class="text-before">
+        trending
+    </div>
+    <div class="product-list">
+        <a href="productpage.html">
+            <div class="product">
+                <img id="productImage1" src="images\accesories\backpacks\crossbody2.png" alt="Product 1">
+                <h4 id="title1">polo ralph lauren</h4>
+                <p id="desc1">men multi the rl67 linen rl67 s</p>
+                <p class="price">₹95,000.00</p>
+            </div>
+        </a>
+        <a href="productpage.html">
+            <div class="product">
+                <img id="productImage2" src="images\accesories\brands\dkny3.png" alt="Product 2">
+                <h4 id="title2">polo ralph lauren</h4>
+                <p id="desc2">men multi the rl67 linen rl67 s</p>
+                <p class="price">₹61,500.00</p>
+            </div>
+        </a>
+        <a href="productpage.html">
+            <div class="product">
+                <img id="productImage3" src="images\men\clothing\formals\f3.jpg" alt="Product 3">
+                <h4 id="title3">polo ralph lauren</h4>
+                <p id="desc3">men multi the rl67 linen rl67 s</p>
+                <p class="price">₹47,000.00</p>
+            </div>
+        </a>
+        <a href="productpage.html">
+            <div class="product">
+                <img id="productImage3" src="images\men\clothing\polos\polos4.jpg" alt="Product 3">
+                <h4 id="title3">polo ralph lauren</h4>
+                <p id="desc3">men multi the rl67 linen rl67 s</p>
+                <p class="price">₹47,000.00</p>
+            </div>
+        </a>
+        <a href="productpage.html">
+            <div class="product">
+                <img id="productImage3" src="images\Women\Accesories\jewelry\2.jpg" alt="Product 3">
+                <h4 id="title3">polo ralph lauren</h4>
+                <p id="desc3">men multi the rl67 linen rl67 s</p>
+                <p class="price">₹47,000.00</p>
+            </div>
+        </a>
+        <a href="productpage.html">
+            <div class="product">
+                <img id="productImage3" src="images\Women\Accesories\jewelry\5.jpg" alt="Product 3">
+                <h4 id="title3">polo ralph lauren</h4>
+                <p id="desc3">men multi the rl67 linen rl67 s</p>
+                <p class="price">₹47,000.00</p>
+            </div>
+        </a>
+        <a href="productpage.html">
+            <div class="product">
+                <img id="productImage3" src="images\Women\Accesories\sunglasses\4.jpg" alt="Product 3">
+                <h4 id="title3">polo ralph lauren</h4>
+                <p id="desc3">men multi the rl67 linen rl67 s</p>
+                <p class="price">₹47,000.00</p>
+            </div>
+        </a>
+        <a href="productpage.html">
+            <div class="product">
+                <img id="productImage3" src="images\Women\Brands\polo ralph\2.jpg" alt="Product 3">
+                <h4 id="title3">polo ralph lauren</h4>
+                <p id="desc3">men multi the rl67 linen rl67 s</p>
+                <p class="price">₹47,000.00</p>
+            </div>
+        </a>
+    </div>
+    <div class="text-before">
+        lookbook
+    </div>
+    <div class="wrapper">
+        <div class="container">
+         <div class="img box-1" data-text="SHOP NOW" style="--image: url(https://r2.fivemanage.com/BeYhmquIBwMA7U5jprpT0/images/LB01.jpg)"></div>
+         <div class="img box-2" data-text="SHOP NOW" style="--image: url(https://r2.fivemanage.com/BeYhmquIBwMA7U5jprpT0/images/lb03.jpg)"></div>
+         <div class="img box-3" data-text="SHOP NOW" style="--image: url(https://r2.fivemanage.com/BeYhmquIBwMA7U5jprpT0/images/lb04.jpg)"></div>
+         <div class="img box-4" data-text="SHOP NOW" style="--image: url(https://r2.fivemanage.com/BeYhmquIBwMA7U5jprpT0/images/lb05.jpg)"></div>
+         <div class="img box-5" data-text="SHOP NOW" style="--image: url(https://r2.fivemanage.com/BeYhmquIBwMA7U5jprpT0/images/legs.jpg)"></div>
+     </div>
+    </div>
+    <div class="text-before">
+        reviews
+    </div>
+    <script src="script.js"></script>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="owl-carousel client-testimonial-carousel">
+                <div class="single-testimonial-item">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Eveniet ex labore id beatae molestiae, libero quis eum nam voluptates quidem.</p>
+                    <h3>Jane Doe <span>Land Broker</span></h3>
+                </div>
+                <div class="single-testimonial-item">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Eveniet ex labore id beatae molestiae, libero quis eum nam voluptates quidem.</p>
+                    <h3>Jane Doe <span>Land Broker</span></h3>
+                </div>
+                <div class="single-testimonial-item">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Eveniet ex labore id beatae molestiae, libero quis eum nam voluptates quidem.</p>
+                    <h3>Jane Doe <span>Land Broker</span></h3>
+                </div>
+                <div class="single-testimonial-item">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Eveniet ex labore id beatae molestiae, libero quis eum nam voluptates quidem.</p>
+                    <h3>Jane Doe <span>Land Broker</span></h3>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <footer style="background-color: #1b1b1b; color: white; padding: 20px;">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <!-- Customer Support Section -->
+            <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+                <h3>Customer Support</h3>
+                <p>We are happy to help you with your purchase</p>
+                <p>Call 1800-833-4488</p>
+            </div>
+
+            <!-- About Us Section -->
+            <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+                <h3>About Us</h3>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li><a href="#" style="color: white; text-decoration: none;">Nova Vest</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Careers</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Feedback</a></li>
+                </ul>
+            </div>
+
+            <!-- Shopping Online Section -->
+            <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+                <h3>Shopping Online</h3>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li><a href="#" style="color: white; text-decoration: none;">FAQs</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Offers Terms & Conditions</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Shipping Policy</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Return / Exchange Policy</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Site Map</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Terms of Use</a></li>
+                </ul>
+            </div>
+
+            <!-- Customer Services Section -->
+            <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+                <h3>Customer Services</h3>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li><a href="#" style="color: white; text-decoration: none;">Made To Measure</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Privacy Policy</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Gift Cards</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Personal Shopping</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Loyalty Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <!-- Our Stores & Events Section -->
+            <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+                <h3>Our Stores & Events</h3>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li><a href="#" style="color: white; text-decoration: none;">Store Locator</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Brand Directory</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Section with Logo and Description -->
+        <div
+            style="border-top: 1px solid #444; padding-top: 20px; margin-top: 20px; display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
+                <img src="images\novavest.png" alt="Aditya Birla" style="width: 150px;">
+            </div>
+
+            <div style="flex: 2; min-width: 200px; margin-bottom: 20px;">
+                <h4>India's Largest Luxury Retailer</h4>
+                <p>Nova Vest is India’s first, and now the largest, luxury multi-brand retail concept with a unique
+                    assortment of global fashion brands for men and women under one roof. A team of buyers and
+                    international fashion experts ensure that Nova Vest has a unique point of view and is a style
+                    mentor for its customers.</p>
+                <p>Nova Vest provides fashion connoisseurs with a personalized experience through a combination of
+                    hand-picked global fashion and warm and engaging service.</p>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="main.js"></script>
+</body>
+<script>
+    $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+            items: 3,
+            //      autoplay:false,
+            margin: 30,
+            loop: true,
+            dots: true
+            //      nav:true,
+            //      navText:["<i class='fas fa-long-arrow-alt-left'></i>","<i class='fas fa-long-arrow-alt-right'></i>" ]
+        });
+    });
+</script>
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+</script>
+
+
+<script>
+    const newarrivalsallmen = {
+        image1: 'images/newarrivals/All/Men/men1.jpg',
+        image2: 'images/newarrivals/All/men/men2.jpg',
+        image3: 'images/newarrivals/All/men/men3.jpg',
+        image4: 'images/newarrivals/All/men/men4.jpg',
+        image5: 'images/newarrivals/All/men/men5.jpg',
+        image6: 'images/newarrivals/All/men/men6.jpg',
+        title1: 'clive christian red perfume',
+        title2: 'radio bombay perfume',
+        title3: 'ray ban sunglasses',
+        title4: 'vaersace black watch',
+        title5: 'rayiban black coolers',
+        title6: 'roja perfume  aoud',
+        desc1: 'clive christians iconic rose fragrance ',
+        desc2: 'bombay perfumery is a contemporary frag... ',
+        desc3: 'ray-ban. men square sunglasses with pola.. ',
+        desc4: 'nigning for versacekleio The global ... ',
+        desc5: 'ray-ban. men circle sunglasses with pola..',
+        desc6: 'roja defies convention and exceeds expec.. '
+    };
+    document.getElementById('newarrivalsallmen').addEventListener('click', function (event) {
+        const image1 = newarrivalsallmen.image1;
+        const image2 = newarrivalsallmen.image2;
+        const image3 = newarrivalsallmen.image3;
+        const image4 = newarrivalsallmen.image4;
+        const image5 = newarrivalsallmen.image5;
+        const image6 = newarrivalsallmen.image6;
+        const title1 = newarrivalsallmen.title1;
+        const title2 = newarrivalsallmen.title2;
+        const title3 = newarrivalsallmen.title3;
+        const title4 = newarrivalsallmen.title4;
+        const title5 = newarrivalsallmen.title5;
+        const title6 = newarrivalsallmen.title6;
+        const desc1 = newarrivalsallmen.desc1;
+        const desc2 = newarrivalsallmen.desc2;
+        const desc3 = newarrivalsallmen.desc3;
+        const desc4 = newarrivalsallmen.desc4;
+        const desc5 = newarrivalsallmen.desc5;
+        const desc6 = newarrivalsallmen.desc6;
+
+        window.location.href =
+            `index.html?image1=${image1}&image2=${image2}&image3=${image3}&image4=${image4}&image5=${image5}&image6=${image6}&title1=${title1}&title2=${title2}&title3=${title3}&title4=${title4}&title5=${title5}&title6=${title6}&desc1=${desc1}&desc2=${desc2}&desc3=${desc3}&desc4=${desc4}&desc5=${desc5}&desc6=${desc6}`;
+    });
+    const newarrivalsnewinpr = {
+        image1: 'images/newarrivals/NewIn/PoloRalphLauren/plr1.jpg',
+        image2: 'images/newarrivals/NewIn/PoloRalphLauren/plr2.jpg',
+        image3: 'images/newarrivals/NewIn/PoloRalphLauren/plr3.jpg',
+        image4: 'images/newarrivals/NewIn/PoloRalphLauren/plr4.jpg',
+        image5: 'images/newarrivals/NewIn/PoloRalphLauren/plr5.jpg',
+        image6: 'images/newarrivals/NewIn/PoloRalphLauren/plr6.jpg',
+        title1: 'Title 1',
+        title2: 'Title 2',
+        title3: 'Title 3',
+        title4: 'Title 4',
+        title5: 'Title 5',
+        title6: 'Title 6',
+        desc1: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc2: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc3: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc4: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc5: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc6: 'Lorem ipsum dolor sit amet, consectetur '
+    };
+    document.getElementById('newarrivalsnewinpr').addEventListener('click', function (event) {
+        const image1 = newarrivalsnewinpr.image1;
+        const image2 = newarrivalsnewinpr.image2;
+        const image3 = newarrivalsnewinpr.image3;
+        const image4 = newarrivalsnewinpr.image4;
+        const image5 = newarrivalsnewinpr.image5;
+        const image6 = newarrivalsnewinpr.image6;
+        const title1 = newarrivalsnewinpr.title1;
+        const title2 = newarrivalsnewinpr.title2;
+        const title3 = newarrivalsnewinpr.title3;
+        const title4 = newarrivalsnewinpr.title4;
+        const title5 = newarrivalsnewinpr.title5;
+        const title6 = newarrivalsnewinpr.title6;
+        const desc1 = newarrivalsnewinpr.desc1;
+        const desc2 = newarrivalsnewinpr.desc2;
+        const desc3 = newarrivalsnewinpr.desc3;
+        const desc4 = newarrivalsnewinpr.desc4;
+        const desc5 = newarrivalsnewinpr.desc5;
+        const desc6 = newarrivalsnewinpr.desc6;
+
+        window.location.href =
+            `index.html?image1=${image1}&image2=${image2}&image3=${image3}&image4=${image4}&image5=${image5}&image6=${image6}&title1=${title1}&title2=${title2}&title3=${title3}&title4=${title4}&title5=${title5}&title6=${title6}&desc1=${desc1}&desc2=${desc2}&desc3=${desc3}&desc4=${desc4}&desc5=${desc5}&desc6=${desc6}`;
+    });
+    const newarrivalsbrandsmj = {
+        image1: 'images/newarrivals/Brands/MarcJacobs/mj1.jpg',
+        image2: 'images/newarrivals/Brands/MarcJacobs/mj2.jpg',
+        image3: 'images/newarrivals/Brands/MarcJacobs/mj3.jpg',
+        image4: 'images/newarrivals/Brands/MarcJacobs/mj4.jpg',
+        image5: 'images/newarrivals/Brands/MarcJacobs/mj5.jpg',
+        image6: 'images/newarrivals/Brands/MarcJacobs/mj6.jpg',
+        title1: 'Title 1',
+        title2: 'Title 2',
+        title3: 'Title 3',
+        title4: 'Title 4',
+        title5: 'Title 5',
+        title6: 'Title 6',
+        desc1: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc2: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc3: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc4: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc5: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc6: 'Lorem ipsum dolor sit amet, consectetur '
+    };
+    document.getElementById('newarrivalsbrandsmj').addEventListener('click', function (event) {
+        const image1 = newarrivalsbrandsmj.image1;
+        const image2 = newarrivalsbrandsmj.image2;
+        const image3 = newarrivalsbrandsmj.image3;
+        const image4 = newarrivalsbrandsmj.image4;
+        const image5 = newarrivalsbrandsmj.image5;
+        const image6 = newarrivalsbrandsmj.image6;
+        const title1 = newarrivalsbrandsmj.title1;
+        const title2 = newarrivalsbrandsmj.title2;
+        const title3 = newarrivalsbrandsmj.title3;
+        const title4 = newarrivalsbrandsmj.title4;
+        const title5 = newarrivalsbrandsmj.title5;
+        const title6 = newarrivalsbrandsmj.title6;
+        const desc1 = newarrivalsbrandsmj.desc1;
+        const desc2 = newarrivalsbrandsmj.desc2;
+        const desc3 = newarrivalsbrandsmj.desc3;
+        const desc4 = newarrivalsbrandsmj.desc4;
+        const desc5 = newarrivalsbrandsmj.desc5;
+        const desc6 = newarrivalsbrandsmj.desc6;
+
+        window.location.href =
+            `index.html?image1=${image1}&image2=${image2}&image3=${image3}&image4=${image4}&image5=${image5}&image6=${image6}&title1=${title1}&title2=${title2}&title3=${title3}&title4=${title4}&title5=${title5}&title6=${title6}&desc1=${desc1}&desc2=${desc2}&desc3=${desc3}&desc4=${desc4}&desc5=${desc5}&desc6=${desc6}`;
+    });
+    const menclothingp = {
+        image1: 'images/men/clothing/polos/polos1.jpg',
+        image2: 'images/men/clothing/polos/polos2.jpg',
+        image3: 'images/men/clothing/polos/polos3.jpg',
+        image4: 'images/men/clothing/polos/polos4.jpg',
+        image5: 'images/men/clothing/polos/polos5.jpg',
+        image6: 'images/men/clothing/polos/polos6.jpg',
+        title1: 'adidas flipflop',
+        title2: 'adidas shoes black and white',
+        title3: 'crocs sneakers',
+        title4: 'green jordans',
+        title5: 'new balance black shoes',
+        title6: 'adidas flipflop',
+        desc1: 'adidas flpflop | men white nmd flipflops ',
+        desc2: 'adidas shoes black and white unsiex spo.. ',
+        desc3: 'unisex crocs sneakers beige colour with..',
+        desc4: 'jordans green with yellow lace unisex for. ',
+        desc5: 'new balance black shoes made for men sports. ',
+        desc6: 'adidas flpflop | men white nmd flipflops '
+    };
+    document.getElementById('menclothingp').addEventListener('click', function (event) {
+        const image1 = menclothingp.image1;
+        const image2 = menclothingp.image2;
+        const image3 = menclothingp.image3;
+        const image4 = menclothingp.image4;
+        const image5 = menclothingp.image5;
+        const image6 = menclothingp.image6;
+        const title1 = menclothingp.title1;
+        const title2 = menclothingp.title2;
+        const title3 = menclothingp.title3;
+        const title4 = menclothingp.title4;
+        const title5 = menclothingp.title5;
+        const title6 = menclothingp.title6;
+        const desc1 = menclothingp.desc1;
+        const desc2 = menclothingp.desc2;
+        const desc3 = menclothingp.desc3;
+        const desc4 = menclothingp.desc4;
+        const desc5 = menclothingp.desc5;
+        const desc6 = menclothingp.desc6;
+
+        window.location.href =
+            `index.html?image1=${image1}&image2=${image2}&image3=${image3}&image4=${image4}&image5=${image5}&image6=${image6}&title1=${title1}&title2=${title2}&title3=${title3}&title4=${title4}&title5=${title5}&title6=${title6}&desc1=${desc1}&desc2=${desc2}&desc3=${desc3}&desc4=${desc4}&desc5=${desc5}&desc6=${desc6}`;
+    });
+    const menaccesoriess = {
+        image1: 'images/men/accesories/shoes/shoes1.jpg',
+        image2: 'images/men/accesories/shoes/shoes2.jpg',
+        image3: 'images/men/accesories/shoes/shoes3.jpg',
+        image4: 'images/men/accesories/shoes/shoes4.jpg',
+        image5: 'images/men/accesories/shoes/shoes5.jpg',
+        image6: 'images/men/accesories/shoes/shoes6.jpg',
+        title1: 'adidas flipflop',
+        title2: 'adidas shoes black and white',
+        title3: 'crocs sneakers',
+        title4: 'green jordans',
+        title5: 'new balance black shoes',
+        title6: 'adidas flipflop',
+        desc1: 'adidas flpflop | men white nmd flipflops ',
+        desc2: 'adidas shoes black and white unsiex spo.. ',
+        desc3: 'unisex crocs sneakers beige colour with..',
+        desc4: 'jordans green with yellow lace unisex for. ',
+        desc5: 'new balance black shoes made for men  ',
+        desc6: 'adidas flpflop | men white nmd flipflops ',
+    };
+    document.getElementById('menaccesoriess').addEventListener('click', function (event) {
+        const image1 = menaccesoriess.image1;
+        const image2 = menaccesoriess.image2;
+        const image3 = menaccesoriess.image3;
+        const image4 = menaccesoriess.image4;
+        const image5 = menaccesoriess.image5;
+        const image6 = menaccesoriess.image6;
+        const title1 = menaccesoriess.title1;
+        const title2 = menaccesoriess.title2;
+        const title3 = menaccesoriess.title3;
+        const title4 = menaccesoriess.title4;
+        const title5 = menaccesoriess.title5;
+        const title6 = menaccesoriess.title6;
+        const desc1 = menaccesoriess.desc1;
+        const desc2 = menaccesoriess.desc2;
+        const desc3 = menaccesoriess.desc3;
+        const desc4 = menaccesoriess.desc4;
+        const desc5 = menaccesoriess.desc5;
+        const desc6 = menaccesoriess.desc6;
+
+        window.location.href =
+            `index.html?image1=${image1}&image2=${image2}&image3=${image3}&image4=${image4}&image5=${image5}&image6=${image6}&title1=${title1}&title2=${title2}&title3=${title3}&title4=${title4}&title5=${title5}&title6=${title6}&desc1=${desc1}&desc2=${desc2}&desc3=${desc3}&desc4=${desc4}&desc5=${desc5}&desc6=${desc6}`;
+    });
+    const menbrandsmj = {
+        image1: 'images/men/clothing/formals/f1.jpg',
+        image2: 'images/men/clothing/formals/f2.jpg',
+        image3: 'images/men/clothing/formals/f3.jpg',
+        image4: 'images/men/clothing/formals/f4.jpg',
+        image5: 'images/men/clothing/formals/f5.jpg',
+        image6: 'images/men/clothing/formals/f6.jpg',
+        title1: 'Title 1',
+        title2: 'Title 2',
+        title3: 'Title 3',
+        title4: 'Title 4',
+        title5: 'Title 5',
+        title6: 'Title 6',
+        desc1: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc2: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc3: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc4: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc5: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc6: 'Lorem ipsum dolor sit amet, consectetur '
+    };
+    document.getElementById('menbrandsmj').addEventListener('click', function (event) {
+        const image1 = menbrandsmj.image1;
+        const image2 = menbrandsmj.image2;
+        const image3 = menbrandsmj.image3;
+        const image4 = menbrandsmj.image4;
+        const image5 = menbrandsmj.image5;
+        const image6 = menbrandsmj.image6;
+        const title1 = menbrandsmj.title1;
+        const title2 = menbrandsmj.title2;
+        const title3 = menbrandsmj.title3;
+        const title4 = menbrandsmj.title4;
+        const title5 = menbrandsmj.title5;
+        const title6 = menbrandsmj.title6;
+        const desc1 = menbrandsmj.desc1;
+        const desc2 = menbrandsmj.desc2;
+        const desc3 = menbrandsmj.desc3;
+        const desc4 = menbrandsmj.desc4;
+        const desc5 = menbrandsmj.desc5;
+        const desc6 = menbrandsmj.desc6;
+
+        window.location.href =
+            `index.html?image1=${image1}&image2=${image2}&image3=${image3}&image4=${image4}&image5=${image5}&image6=${image6}&title1=${title1}&title2=${title2}&title3=${title3}&title4=${title4}&title5=${title5}&title6=${title6}&desc1=${desc1}&desc2=${desc2}&desc3=${desc3}&desc4=${desc4}&desc5=${desc5}&desc6=${desc6}`;
+    });
+    const womanclothingt = {
+        image1: 'images/Women/Clothes/tops/01.jpg',
+        image2: 'images/Women/Clothes/tops/02.jpg',
+        image3: 'images/Women/Clothes/tops/03.jpg',
+        image4: 'images/Women/Clothes/tops/04.jpg',
+        image5: 'images/Women/Clothes/tops/05.jpg',
+        image6: 'images/Women/Clothes/tops/06.jpg',
+        title1: 'Title 1',
+        title2: 'Title 2',
+        title3: 'Title 3',
+        title4: 'Title 4',
+        title5: 'Title 5',
+        title6: 'Title 6',
+        desc1: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc2: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc3: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc4: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc5: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc6: 'Lorem ipsum dolor sit amet, consectetur '
+    };
+    document.getElementById('womanclothingt').addEventListener('click', function (event) {
+        const image1 = womanclothingt.image1;
+        const image2 = womanclothingt.image2;
+        const image3 = womanclothingt.image3;
+        const image4 = womanclothingt.image4;
+        const image5 = womanclothingt.image5;
+        const image6 = womanclothingt.image6;
+        const title1 = womanclothingt.title1;
+        const title2 = womanclothingt.title2;
+        const title3 = womanclothingt.title3;
+        const title4 = womanclothingt.title4;
+        const title5 = womanclothingt.title5;
+        const title6 = womanclothingt.title6;
+        const desc1 = womanclothingt.desc1;
+        const desc2 = womanclothingt.desc2;
+        const desc3 = womanclothingt.desc3;
+        const desc4 = womanclothingt.desc4;
+        const desc5 = womanclothingt.desc5;
+        const desc6 = womanclothingt.desc6;
+
+        window.location.href =
+            `index.html?image1=${image1}&image2=${image2}&image3=${image3}&image4=${image4}&image5=${image5}&image6=${image6}&title1=${title1}&title2=${title2}&title3=${title3}&title4=${title4}&title5=${title5}&title6=${title6}&desc1=${desc1}&desc2=${desc2}&desc3=${desc3}&desc4=${desc4}&desc5=${desc5}&desc6=${desc6}`;
+    });
+    const womanaccesoriesh = {
+        image1: 'images/Women/Accesories/bags/1.jpg',
+        image2: 'images/Women/Accesories/bags/2.jpg',
+        image3: 'images/Women/Accesories/bags/3.jpg',
+        image4: 'images/Women/Accesories/bags/4.jpg',
+        image5: 'images/Women/Accesories/bags/5.jpg',
+        image6: 'images/Women/Accesories/bags/6.jpg',
+        title1: 'Title 1',
+        title2: 'Title 2',
+        title3: 'Title 3',
+        title4: 'Title 4',
+        title5: 'Title 5',
+        title6: 'Title 6',
+        desc1: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc2: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc3: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc4: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc5: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc6: 'Lorem ipsum dolor sit amet, consectetur '
+    };
+    document.getElementById('womanaccesoriesh').addEventListener('click', function (event) {
+        const image1 = womanaccesoriesh.image1;
+        const image2 = womanaccesoriesh.image2;
+        const image3 = womanaccesoriesh.image3;
+        const image4 = womanaccesoriesh.image4;
+        const image5 = womanaccesoriesh.image5;
+        const image6 = womanaccesoriesh.image6;
+        const title1 = womanaccesoriesh.title1;
+        const title2 = womanaccesoriesh.title2;
+        const title3 = womanaccesoriesh.title3;
+        const title4 = womanaccesoriesh.title4;
+        const title5 = womanaccesoriesh.title5;
+        const title6 = womanaccesoriesh.title6;
+        const desc1 = womanaccesoriesh.desc1;
+        const desc2 = womanaccesoriesh.desc2;
+        const desc3 = womanaccesoriesh.desc3;
+        const desc4 = womanaccesoriesh.desc4;
+        const desc5 = womanaccesoriesh.desc5;
+        const desc6 = womanaccesoriesh.desc6;
+
+        window.location.href =
+            `index.html?image1=${image1}&image2=${image2}&image3=${image3}&image4=${image4}&image5=${image5}&image6=${image6}&title1=${title1}&title2=${title2}&title3=${title3}&title4=${title4}&title5=${title5}&title6=${title6}&desc1=${desc1}&desc2=${desc2}&desc3=${desc3}&desc4=${desc4}&desc5=${desc5}&desc6=${desc6}`;
+    });
+    const womanbrandsb = {
+        image1: 'images/Women/Brands/tedbaker/1.jpg',
+        image2: 'images/Women/Brands/tedbaker/2.jpg',
+        image3: 'images/Women/Brands/tedbaker/3.jpg',
+        image4: 'images/Women/Brands/tedbaker/4.jpg',
+        image5: 'images/Women/Brands/tedbaker/5.jpg',
+        image6: 'images/Women/Brands/tedbaker/6.jpg',
+        title1: 'Title 1',
+        title2: 'Title 2',
+        title3: 'Title 3',
+        title4: 'Title 4',
+        title5: 'Title 5',
+        title6: 'Title 6',
+        desc1: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc2: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc3: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc4: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc5: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc6: 'Lorem ipsum dolor sit amet, consectetur '
+    };
+    document.getElementById('womanbrandsb').addEventListener('click', function (event) {
+        const image1 = womanbrandsb.image1;
+        const image2 = womanbrandsb.image2;
+        const image3 = womanbrandsb.image3;
+        const image4 = womanbrandsb.image4;
+        const image5 = womanbrandsb.image5;
+        const image6 = womanbrandsb.image6;
+        const title1 = womanbrandsb.title1;
+        const title2 = womanbrandsb.title2;
+        const title3 = womanbrandsb.title3;
+        const title4 = womanbrandsb.title4;
+        const title5 = womanbrandsb.title5;
+        const title6 = womanbrandsb.title6;
+        const desc1 = womanbrandsb.desc1;
+        const desc2 = womanbrandsb.desc2;
+        const desc3 = womanbrandsb.desc3;
+        const desc4 = womanbrandsb.desc4;
+        const desc5 = womanbrandsb.desc5;
+        const desc6 = womanbrandsb.desc6;
+
+        window.location.href =
+            `index.html?image1=${image1}&image2=${image2}&image3=${image3}&image4=${image4}&image5=${image5}&image6=${image6}&title1=${title1}&title2=${title2}&title3=${title3}&title4=${title4}&title5=${title5}&title6=${title6}&desc1=${desc1}&desc2=${desc2}&desc3=${desc3}&desc4=${desc4}&desc5=${desc5}&desc6=${desc6}`;
+    });
+    const kidsclothingp = {
+        image1: 'images/kids/brands/poloralphkids/01.jpg',
+        image2: 'images/kids/brands/poloralphkids/02.jpg',
+        image3: 'images/kids/brands/poloralphkids/03.jpg',
+        image4: 'images/kids/brands/poloralphkids/04.jpg',
+        image5: 'images/kids/brands/poloralphkids/05.jpg',
+        image6: 'images/kids/brands/poloralphkids/06.jpg',
+        title1: 'Title 1',
+        title2: 'Title 2',
+        title3: 'Title 3',
+        title4: 'Title 4',
+        title5: 'Title 5',
+        title6: 'Title 6',
+        desc1: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc2: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc3: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc4: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc5: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc6: 'Lorem ipsum dolor sit amet, consectetur '
+    };
+    document.getElementById('kidsclothingp').addEventListener('click', function (event) {
+        const image1 = kidsclothingp.image1;
+        const image2 = kidsclothingp.image2;
+        const image3 = kidsclothingp.image3;
+        const image4 = kidsclothingp.image4;
+        const image5 = kidsclothingp.image5;
+        const image6 = kidsclothingp.image6;
+        const title1 = kidsclothingp.title1;
+        const title2 = kidsclothingp.title2;
+        const title3 = kidsclothingp.title3;
+        const title4 = kidsclothingp.title4;
+        const title5 = kidsclothingp.title5;
+        const title6 = kidsclothingp.title6;
+        const desc1 = kidsclothingp.desc1;
+        const desc2 = kidsclothingp.desc2;
+        const desc3 = kidsclothingp.desc3;
+        const desc4 = kidsclothingp.desc4;
+        const desc5 = kidsclothingp.desc5;
+        const desc6 = kidsclothingp.desc6;
+
+        window.location.href =
+            `index.html?image1=${image1}&image2=${image2}&image3=${image3}&image4=${image4}&image5=${image5}&image6=${image6}&title1=${title1}&title2=${title2}&title3=${title3}&title4=${title4}&title5=${title5}&title6=${title6}&desc1=${desc1}&desc2=${desc2}&desc3=${desc3}&desc4=${desc4}&desc5=${desc5}&desc6=${desc6}`;
+    });
+    const kidsbrandsh = {
+        image1: 'images/kids/clothing/polos/1.jpg',
+        image2: 'images/kids/clothing/polos/2.jpg',
+        image3: 'images/kids/clothing/polos/3.jpg',
+        image4: 'images/kids/clothing/polos/4.jpg',
+        image5: 'images/kids/clothing/casuals/4.jpg',
+        image6: 'images/kids/clothing/tshirts/1.jpg',
+        title1: 'Title 1',
+        title2: 'Title 2',
+        title3: 'Title 3',
+        title4: 'Title 4',
+        title5: 'Title 5',
+        title6: 'Title 6',
+        desc1: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc2: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc3: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc4: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc5: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc6: 'Lorem ipsum dolor sit amet, consectetur '
+    };
+    document.getElementById('kidsbrandsh').addEventListener('click', function (event) {
+        const image1 = kidsbrandsh.image1;
+        const image2 = kidsbrandsh.image2;
+        const image3 = kidsbrandsh.image3;
+        const image4 = kidsbrandsh.image4;
+        const image5 = kidsbrandsh.image5;
+        const image6 = kidsbrandsh.image6;
+        const title1 = kidsbrandsh.title1;
+        const title2 = kidsbrandsh.title2;
+        const title3 = kidsbrandsh.title3;
+        const title4 = kidsbrandsh.title4;
+        const title5 = kidsbrandsh.title5;
+        const title6 = kidsbrandsh.title6;
+        const desc1 = kidsbrandsh.desc1;
+        const desc2 = kidsbrandsh.desc2;
+        const desc3 = kidsbrandsh.desc3;
+        const desc4 = kidsbrandsh.desc4;
+        const desc5 = kidsbrandsh.desc5;
+        const desc6 = kidsbrandsh.desc6;
+
+        window.location.href =
+            `index.html?image1=${image1}&image2=${image2}&image3=${image3}&image4=${image4}&image5=${image5}&image6=${image6}&title1=${title1}&title2=${title2}&title3=${title3}&title4=${title4}&title5=${title5}&title6=${title6}&desc1=${desc1}&desc2=${desc2}&desc3=${desc3}&desc4=${desc4}&desc5=${desc5}&desc6=${desc6}`;
+    });
+    const accesoriesstyleb = {
+        image1: 'images/accesories/backpacks/crossbody1.png',
+        image2: 'images/accesories/backpacks/crossbody2.png',
+        image3: 'images/accesories/backpacks/crossbody3.png',
+        image4: 'images/accesories/backpacks/crossbody4.png',
+        image5: 'images/accesories/backpacks/crossbody5.png',
+        image6: 'images/accesories/backpacks/crossbody6.png',
+        title1: 'Title 1',
+        title2: 'Title 2',
+        title3: 'Title 3',
+        title4: 'Title 4',
+        title5: 'Title 5',
+        title6: 'Title 6',
+        desc1: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc2: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc3: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc4: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc5: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc6: 'Lorem ipsum dolor sit amet, consectetur '
+    };
+    document.getElementById('accesoriesstyleb').addEventListener('click', function (event) {
+        const image1 = accesoriesstyleb.image1;
+        const image2 = accesoriesstyleb.image2;
+        const image3 = accesoriesstyleb.image3;
+        const image4 = accesoriesstyleb.image4;
+        const image5 = accesoriesstyleb.image5;
+        const image6 = accesoriesstyleb.image6;
+        const title1 = accesoriesstyleb.title1;
+        const title2 = accesoriesstyleb.title2;
+        const title3 = accesoriesstyleb.title3;
+        const title4 = accesoriesstyleb.title4;
+        const title5 = accesoriesstyleb.title5;
+        const title6 = accesoriesstyleb.title6;
+        const desc1 = accesoriesstyleb.desc1;
+        const desc2 = accesoriesstyleb.desc2;
+        const desc3 = accesoriesstyleb.desc3;
+        const desc4 = accesoriesstyleb.desc4;
+        const desc5 = accesoriesstyleb.desc5;
+        const desc6 = accesoriesstyleb.desc6;
+
+        window.location.href =
+            `index.html?image1=${image1}&image2=${image2}&image3=${image3}&image4=${image4}&image5=${image5}&image6=${image6}&title1=${title1}&title2=${title2}&title3=${title3}&title4=${title4}&title5=${title5}&title6=${title6}&desc1=${desc1}&desc2=${desc2}&desc3=${desc3}&desc4=${desc4}&desc5=${desc5}&desc6=${desc6}`;
+    });
+    const accesoriesbrandsd = {
+        image1: 'images/accesories/brands/dkny1.png',
+        image2: 'images/accesories/brands/dkny2.png',
+        image3: 'images/accesories/brands/dkny3.png',
+        image4: 'images/accesories/brands/dkny4.png',
+        image5: 'images/accesories/brands/dkny5.png',
+        image6: 'images/accesories/brands/dkny6.png',
+        title1: 'Title 1',
+        title2: 'Title 2',
+        title3: 'Title 3',
+        title4: 'Title 4',
+        title5: 'Title 5',
+        title6: 'Title 6',
+        desc1: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc2: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc3: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc4: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc5: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc6: 'Lorem ipsum dolor sit amet, consectetur '
+    };
+    document.getElementById('accesoriesbrandsd').addEventListener('click', function (event) {
+        const image1 = accesoriesbrandsd.image1;
+        const image2 = accesoriesbrandsd.image2;
+        const image3 = accesoriesbrandsd.image3;
+        const image4 = accesoriesbrandsd.image4;
+        const image5 = accesoriesbrandsd.image5;
+        const image6 = accesoriesbrandsd.image6;
+        const title1 = accesoriesbrandsd.title2;
+        const title3 = accesoriesbrandsd.title3;
+        const title4 = accesoriesbrandsd.title4;
+        const title5 = accesoriesbrandsd.title5;
+        const title6 = accesoriesbrandsd.title6;
+        const desc1 = accesoriesbrandsd.desc1;
+        const desc2 = accesoriesbrandsd.desc2;
+        const desc3 = accesoriesbrandsd.desc3;
+        const desc4 = accesoriesbrandsd.desc4;
+        const desc5 = accesoriesbrandsd.desc5;
+        const desc6 = accesoriesbrandsd.desc6;
+
+        window.location.href =
+            `index.html?image1=${image1}&image2=${image2}&image3=${image3}&image4=${image4}&image5=${image5}&image6=${image6}&title1=${title1}&title2=${title2}&title3=${title3}&title4=${title4}&title5=${title5}&title6=${title6}&desc1=${desc1}&desc2=${desc2}&desc3=${desc3}&desc4=${desc4}&desc5=${desc5}&desc6=${desc6}`;
+    });
+    const footwearstylescs = {
+        image1: 'images/men/accesories/shoes/shoes1.jpg',
+        image2: 'images/men/accesories/shoes/shoes2.jpg',
+        image3: 'images/men/accesories/shoes/shoes3.jpg',
+        image4: 'images/men/accesories/shoes/shoes4.jpg',
+        image5: 'images/men/accesories/shoes/shoes5.jpg',
+        image6: 'images/men/accesories/shoes/shoes6.jpg',
+        title1: 'Title 1',
+        title2: 'Title 2',
+        title3: 'Title 3',
+        title4: 'Title 4',
+        title5: 'Title 5',
+        title6: 'Title 6',
+        desc1: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc2: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc3: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc4: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc5: 'Lorem ipsum dolor sit amet, consectetur ',
+        desc6: 'Lorem ipsum dolor sit amet, consectetur '
+    };
+    document.getElementById('footwearstylescsas').addEventListener('click', function (event) {
+        const image1 = footwearstylescs.image1;
+        const image2 = footwearstylescs.image2;
+        const image3 = footwearstylescs.image3;
+        const image4 = footwearstylescs.image4;
+        const image5 = footwearstylescs.image5;
+        const image6 = footwearstylescs.image6;
+        const title1 = footwearstylescs.title2;
+        const title3 = footwearstylescs.title3;
+        const title4 = footwearstylescs.title4;
+        const title5 = footwearstylescs.title5;
+        const title6 = footwearstylescs.title6;
+        const desc1 = footwearstylescs.desc1;
+        const desc2 = footwearstylescs.desc2;
+        const desc3 = footwearstylescs.desc3;
+        const desc4 = footwearstylescs.desc4;
+        const desc5 = footwearstylescs.desc5;
+        const desc6 = footwearstylescs.desc6;
+
+        window.location.href =
+            `index.html?image1=${image1}&image2=${image2}&image3=${image3}&image4=${image4}&image5=${image5}&image6=${image6}&title1=${title1}&title2=${title2}&title3=${title3}&title4=${title4}&title5=${title5}&title6=${title6}&desc1=${desc1}&desc2=${desc2}&desc3=${desc3}&desc4=${desc4}&desc5=${desc5}&desc6=${desc6}`;
+    });
+    document.getElementById('footwearbrandsad').addEventListener('click', function (event) {
+        const image1 = footwearstylescs.image1;
+        const image2 = footwearstylescs.image2;
+        const image3 = footwearstylescs.image3;
+        const image4 = footwearstylescs.image4;
+        const image5 = footwearstylescs.image5;
+        const image6 = footwearstylescs.image6;
+        const title1 = footwearstylescs.title2;
+        const title3 = footwearstylescs.title3;
+        const title4 = footwearstylescs.title4;
+        const title5 = footwearstylescs.title5;
+        const title6 = footwearstylescs.title6;
+        const desc1 = footwearstylescs.desc1;
+        const desc2 = footwearstylescs.desc2;
+        const desc3 = footwearstylescs.desc3;
+        const desc4 = footwearstylescs.desc4;
+        const desc5 = footwearstylescs.desc5;
+        const desc6 = footwearstylescs.desc6;
+
+        window.location.href =
+            `index.html?image1=${image1}&image2=${image2}&image3=${image3}&image4=${image4}&image5=${image5}&image6=${image6}&title1=${title1}&title2=${title2}&title3=${title3}&title4=${title4}&title5=${title5}&title6=${title6}&desc1=${desc1}&desc2=${desc2}&desc3=${desc3}&desc4=${desc4}&desc5=${desc5}&desc6=${desc6}`;
+    });
+
+
+
+
+</script>
+
+<script>
+    // Get the elements with class="column"
+    var elements = document.getElementsByClassName("column");
+
+    // Declare a loop variable
+    var i;
+
+    // Full-width images
+    function one() {
+        for (i = 0; i < elements.length; i++) {
+            elements[i].style.msFlex = "100%";  // IE10
+            elements[i].style.flex = "100%";
+        }
+    }
+
+    // Two images side by side
+    function two() {
+        for (i = 0; i < elements.length; i++) {
+            elements[i].style.msFlex = "50%";  // IE10
+            elements[i].style.flex = "50%";
+        }
+    }
+
+    // Four images side by side
+    function four() {
+        for (i = 0; i < elements.length; i++) {
+            elements[i].style.msFlex = "25%";  // IE10
+            elements[i].style.flex = "25%";
+        }
+    }
+
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("myHeader");
+    var btns = header.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+    }
+</script>
+<script>
+    window.onscroll = function () { myFunction() };
+
+    // Get the header
+    var header = document.getElementById("myheader");
+
+    // Get the offset position of the navbar
+    var sticky = header.offsetTop;
+
+    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+    }
+
+</script>
